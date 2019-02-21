@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 1</title>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      $("document").ready(function() {
+        $("#box").on("click", whenClicked);
+        $("#box").on("mouseleave", mouseLeave);
+
+        function whenClicked() {
+          $("#box").html("<h4>Hey you clicked me!</h4>");
+        }
+
+        function mouseLeave() {
+          $("#box").html("<h4>Why are you leaving?!</h4>");
+        }
+      });
+    </script>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
+</html>
