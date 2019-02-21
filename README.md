@@ -1,2 +1,3 @@
-# jQuery1
-Learning jQuery. First project.
+# jQuery
+
+Currently learning a new technology. Decided to learn jQuery to be able to manipulate the DOM effectively.
