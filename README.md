@@ -1,2 +1,2 @@
 # jQuery1
-Learning jQuert
+Learning jQuery. First project.
