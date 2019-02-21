@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic Selectors</title>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      $("document").ready(function() {
+        $("p").css("border", "2px solid red");
+        $(".second-text").css("border", "1px solid purple");
+        $("#third-text").css("border", "1px solid green");
+      });
+    </script>
+
+    <style>
+      .text {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+    <p class="second-text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+    <p class="text" id="third-text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+  </body>
+</html>
