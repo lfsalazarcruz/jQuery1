@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Animate</title>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      $("document").ready(function() {
+        $("#grow").click(function() {
+          $("#box").animate({ width: "500px", height: "500px" }, 1000);
+        });
+
+        $("#move").click(function() {
+          $("#box").animate({ marginLeft: "100px" }, 1000);
+        });
+
+        $("#increaseSize").click(function() {
+          $("#box").animate({ fontSize: "60px" }, 1000);
+        });
+
+        $("#doManyThings").click(function() {
+          $("#box").animate(
+            {
+              width: "500px",
+              height: "500px",
+              marginLeft: "100px",
+              fontSize: "60px"
+            },
+            1000
+          );
+        });
+      });
+    </script>
+
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        background: #ccddcc;
+        margin-top: 10%;
+        position: absolute;
+      }
+
+      #box p {
+        text-transform: uppercase;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" id="grow">Grow</a>
+    <a href="#" id="move">Move</a>
+    <a href="#" id="increaseSize">Increase font size</a>
+    <a href="#" id="doManyThings">Do many things</a>
+    <div id="box">
+      <p>hello world!</p>
+    </div>
+  </body>
+</html>
