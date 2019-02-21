@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <title>Project 1</title>
     <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      $("document").ready(function() {
+        // Selecting all h1 tags
+        $("h1").css("border", "2px solid red");
+        // Selecting the first h1 tag
+        $("h1:first").css("border", "2px solid blue");
+        // Selecting by id
+        $("#heading-three").css("background", "green");
+        // Selecting by class
+        $(".heading-four").css("border", "1px solid purple");
+      });
+    </script>
   </head>
-  <body></body>
+  <body>
+    <h1>This is heading 1</h1>
+    <h1>This is heading 2</h1>
+    <h1 id="heading-three">This is heading 3</h1>
+    <h1 class="heading-four">This is heading 4</h1>
+  </body>
 </html>
