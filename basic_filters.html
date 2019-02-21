@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic Filters</title>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      $("document").ready(function() {
+        $("#container p:first").css("border", "1px solid blue");
+        $("#container p:last").css("border", "1px solid red");
+        $("#container p:even").css("border", "3px solid green");
+        $("#container p:odd").css("border", "3px solid blue");
+      });
+    </script>
+
+    <style></style>
+  </head>
+  <body>
+    <div id="container">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+    </div>
+  </body>
+</html>
