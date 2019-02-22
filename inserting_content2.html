@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert content</title>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      $("document").ready(function() {
+        $("#appendTo").click(function() {
+          $("p:first").appendTo("p:last");
+        });
+
+        $("#prependTo").click(function() {
+          $("p:first").prependTo("p:last");
+        });
+
+        $("#after").click(function() {
+          $("p").after("***");
+        });
+
+        $("#before").click(function() {
+          $("p").before(">>>");
+        });
+
+        $("#insertAfter").click(function() {
+          $("<p>inserting after last paragraph</p>").insertAfter("p:last");
+        });
+
+        $("#insertBefore").click(function() {
+          $("<p>inserting before last paragraph</p>").insertBefore("p:last");
+        });
+      });
+    </script>
+
+    <style></style>
+  </head>
+  <body>
+    <div id="container">
+      <a href="#" id="appendTo">append</a>
+      <a href="#" id="prependTo">prepend</a>
+      <a href="#" id="after">after</a>
+      <a href="#" id="before">before</a>
+      <a href="#" id="insertAfter">Insert after</a>
+      <a href="#" id="insertBefore">Insert before</a>
+      <p>This is 1</p>
+      <p>This is 2</p>
+      <p>This is 3</p>
+      <p>This is 4</p>
+      <p>This is 5</p>
+    </div>
+  </body>
+</html>
